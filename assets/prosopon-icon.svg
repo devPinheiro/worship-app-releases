@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Prosopon</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#232a5c"/>
+      <stop offset="1" stop-color="#0a0c1d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd98a"/>
+      <stop offset="1" stop-color="#ff8a1f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="light" cx="0.4" cy="0.35" r="0.65">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#ffe7b3"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </radialGradient>
+  </defs>
+  <!-- tile -->
+  <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#tile)"/>
+  <!-- presence: soft light behind the bowl -->
+  <circle cx="566" cy="452" r="330" fill="url(#glow)"/>
+  <!-- the P: stem and bowl -->
+  <rect x="290" y="226" width="132" height="590" rx="66" fill="url(#gold)"/>
+  <circle cx="566" cy="452" r="160" fill="none" stroke="url(#gold)" stroke-width="132"/>
+  <!-- the light within -->
+  <circle cx="566" cy="452" r="58" fill="url(#light)"/>
+</svg>
